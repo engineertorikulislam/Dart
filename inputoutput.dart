@@ -1,33 +1,16 @@
-  import 'dart:io';
+import 'dart:io';
 
-  void main(){
+// For  Input We need to import a library  called 'dart:io'
 
-    print('----------- Input Handling -----------');
-    print('Enter first number');
-    var n1 = int.parse(stdin.readLineSync());  // For Integer Input we have to use int.parse();
-    print('Enter second number');
-    var n2 = int.parse(stdin.readLineSync());
+void main() {
+  print("-----------GeeksForGeeks-----------");
+  print("Enter first number");
+  int n1 = int.parse(stdin.readLineSync());
 
-    // Adding them and printing them
-    var sum = n1 + n2;
-    print('Sum of $n1 and $n2  is :  $sum');
+  print("Enter second number");
+  int n2 = int.parse(stdin.readLineSync());
 
-    // Input Double Type Value
-
-    print('Enter Your Marks in Double Value :\n');
-    var d1=double.parse(stdin.readLineSync());
-    print('Enter Your Marks in Double Value :\n');
-    var d2=double.parse(stdin.readLineSync());
-
-    // Adding Double value
-
-
-    var div= d1 / d2;
-    // Double Value round in Dart
-    div = double.parse((div).toStringAsFixed(4));
-   // div = double.parse((div).toStringAsFixed(2));
-    print('Sum of  $d1  and $d2  is :  $div');
-
-
-
-  }
+  // Adding them and printing them
+  int sum = n1 + n2;
+  print("Sum is $sum");
+}
